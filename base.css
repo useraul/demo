@@ -1,0 +1,471 @@
+/* FONTS */
+@font-face {
+	font-family: 'gotLig';
+    src: url('fonts/Gotham-Light.otf') format('opentype');
+    font-weight: 100;
+}
+@font-face {
+	font-family: 'gotBook';
+    src: url('fonts/Gotham-Book.otf') format('opentype');
+    font-weight: 100;
+}
+@font-face{
+	font-family: 'gotMed';
+    src: url('fonts/Gotham-Medium.otf') format('opentype');
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f8f8f8;
+    color: #666;
+    font-family: 'gotBook';
+    font-size: 13px;
+}
+/* header */
+header{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 5px 0;
+    width: 100%;
+}
+.rwd-menu{
+    display: none!important;
+}
+.h-items{
+    flex-grow: 1;
+    padding-right: 2%;
+    width: 10%;
+    position: relative;
+}
+    .h-items:nth-child(2){
+        width: 70%;
+    }
+    .h-items:nth-child(3){
+        text-align: center;
+        padding-right: 0;
+    }
+    .h-items:nth-child(4){
+        text-align: right;
+        padding-right: 0;
+        padding-top: 10px;
+    }
+    .h-items i{
+        color: #666;
+        font-size: 32px;
+        margin: 5px;
+    }
+        .h-items-compras{
+            background: #4CAD50;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 11px;
+            height: 20px;
+            left: 40px;
+            position: absolute;
+            padding: 2px;
+            width: 20px;
+        }
+
+select {
+   background: transparent url(img/select-arrow.png) right no-repeat;
+   border-radius: 0;
+   width: 20%;
+}
+input, select{
+    border: 1px solid #4CAD50;
+    border-radius: 0%!important;
+    color: #666;
+    font-size: 13px;
+    float: left;
+    padding: 8px;
+    -webkit-appearance: none;
+}
+input[type=search]{
+    padding: 8px 9px 8px 9px;
+    width: 70%;
+}
+input[type=submit]{
+    background: #4CAD50;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    width: 10%;
+}
+input:focus, select:focus{
+    outline: none;
+}
+
+/* footer */
+footer{
+    background: #fff;
+    padding: 5%;
+    width: 100%;
+}
+.main-slider{
+    background: #aaa;
+    width: 100%;
+}
+    .main-slider img{
+        width: 100%;
+        display: block;
+    }
+
+/* categorias */
+.main-categoria{
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(204, 204, 204, .3);
+    max-width: 1200px;
+    margin: 3% auto 2% auto;
+    padding: 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .categorias{
+        display: flex;
+        border: 1px solid #4CAD50;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 80px;
+        margin: 0 1%;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+
+        position: relative;
+    }
+        /* Tooltip text */
+        .tooltip{
+            border-radius: 5px;
+            background-color: rgba(76, 173, 80, 0);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            
+            position: absolute;
+            top: 110%;
+            transition: all linear .3s;
+        }
+        .categorias:hover .tooltip{
+            background-color: rgba(76, 173, 80, 1);
+        }
+
+/*** ***/
+.row{
+    padding: 3% 0;
+    width: 100%;
+}
+.wrapp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: right;*/
+    /*align-items: center;*/
+
+    margin: 0 auto;
+    max-width: 1200px;
+}
+    .items{
+        box-shadow: 0px 0px 5px rgba(204, 204, 204, .3);
+        background: #fff;
+        margin-right: 1%;
+        margin-bottom: 2%;
+        padding: 10px;
+        width: 24.25%;
+
+        position: relative;
+    }
+        .items:nth-child(4n+4){
+            margin-right: 0;
+        }
+        .items img{
+            display: block;
+            width: 100%;
+        }
+    /* titulos */
+    .items-head{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 0 auto 2% auto;
+        max-width: 1200px;
+    }
+        .ver-mas{
+            border: 1px solid #4CAD50;
+            color: #4CAD50;
+            font-family: 'gotMed';
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+    .ofertas{
+        background: #EF5350;
+        border-radius: 0 0 50% 0;
+        font-family: 'gotMed';
+        font-size: 17px;
+        color: #fff;
+        padding: 5%;
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+/* index - fonts */
+h1{
+    color: #4CAD50;
+    font-size: 30px;
+}
+.pro-tit{
+    color: #4CAD50;
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+}
+.lk-nego{
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+    .favorites{
+        float: left;
+    }
+    .comments{
+        float: right;
+    }
+    i{
+        color: #EF5350;
+        font-size: 15px;
+    }   
+    .fa-comment-alt{
+        color: #4CAD50;
+        /* font-size: 20px;*/
+    }
+   
+    .precio{
+        border-top: 1px solid #eee;
+        float: left;
+        margin-top: 10px;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+
+        display: flex;
+    }
+        .precio-txt{
+            color: #4CAD50;
+            font-size: 15px;
+            font-family: 'gotMed';
+            margin: 0 auto 0 auto;
+        }
+        .tachado{
+            text-decoration: line-through;
+        }
+        .btn-acciones{
+            flex-grow: 1;
+        }
+            .btn-acciones a{
+                color: #4CAD50;
+                font-family: 'gotMed';
+                text-decoration: none;
+            }
+
+/* menu */
+ul{
+    margin: 10px 0 5px 0;
+    height: 20px;
+    float: left;
+}
+ul li{
+    list-style: none;
+    float: left;
+}
+li a{
+    color: #4CAD50;
+    display: block;
+    padding: 10px 20px 10px 0;
+    font-family: 'gotMed';
+    text-decoration: none;
+}
+    li a:hover{
+        color: #666;
+    }
+
+/* menu mobile */
+.side-menu{
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    left: -100%;
+    padding: 1% 4%;
+    top: 0;
+    transition: all ease-in-out .2s;
+    width: 100%;
+    z-index: 999;
+
+    overflow-y: scroll;
+}
+@media screen{
+    .side-menu{
+        position: fixed;
+    }
+}
+.side-menu-out{
+    float: right;
+    font-family: 'gotMed';
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.side-logo, .side-options, .session{
+    border-bottom: 1px solid #eee;
+    float: left;
+    width: 100%;
+}
+.side-logo{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+    .side-logo img{
+        height: 60px;
+    }
+    .side-options ul{
+        display: block!important;
+        height: 220px;
+        text-align: center;
+        width: 100%;
+    }
+        .sesion-btn{
+            display: block;
+            margin: 10px auto 10px auto;
+            font-family: 'gotMed'!important;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            width: 300px;
+        }
+        .sesion-reg{
+            background: #4CAD50;
+            color: #fff;
+            padding: 12px;
+        }
+        .sesion-log{
+            border: 1px solid #4CAD50;
+            color: #4CAD50;
+        }
+        .o{
+            margin: 10px;
+            color: #999;
+            text-align: center;
+        }
+        .boton-fbk{
+            text-align: center;
+        }
+    .side-options ul li{
+        font-size: 15px;
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+        .side-options a{
+            font-family: 'gotBook';
+        }
+
+/* media queries */
+@media all and (max-width: 768px){
+    .row{
+        padding: 3% 2%!important;
+    }
+    header{
+        padding: 2%!important;
+    }
+    .items{
+        box-shadow: 0px 0px 5px rgba(204, 204, 204, .6);
+        width: 49%!important;
+        margin-right: 2%;
+    }
+        .items:nth-child(2n+2){
+            margin-right: 0!important;
+        }
+    
+    /* acciones del header */
+    .h-items:nth-child(3), ul, .btn-reg, select{
+        display: none;
+    }
+    #btn-rwd{
+        display: block!important;
+        cursor: pointer;
+    }
+    .h-items{
+        display: flex;
+        align-items: center;
+    }  
+    .h-items:nth-child(1){
+        width: 10%;
+    }
+        .logo{
+            width: 100%;
+        }
+        
+    .h-items:nth-child(2){
+        width: 80%;
+    }
+        .buscar{
+            width: 100%;
+        }
+        input[type=search]{
+            width: 100%;
+        }
+    .h-items:nth-child(4){
+        padding: 0!important;
+        width: 10%;
+    }
+        .h-items:nth-child(4) i{
+            margin: 0;
+        }
+        .divbtnrwd{
+            flex-grow: 1;
+        }
+    
+    input[type=submit]{
+        display: none;
+    }
+    .pro-tit, .lk-nego, .favorites, .comments{
+        font-family: 'gotMed';
+    }
+}
+
+@media all and (max-width: 415px){
+    h1{
+        font-size: 20px!important;
+    }
+    .ver-mas{
+        padding: 6px 10px!important;
+    }
+    .categorias{
+        height: 50px;
+        width: 50px;
+    }
+        .categorias img{
+            width: 24px;
+        }
+        .txtrecomiendan{
+            display: none!important;
+        }
+}
+
+@media all and (max-width: 361px){
+    .items{
+        width: 100%!important;
+        margin-right: 0!important;
+    }
+        .txtrecomiendan{
+            display: inline!important;
+        }
+}
